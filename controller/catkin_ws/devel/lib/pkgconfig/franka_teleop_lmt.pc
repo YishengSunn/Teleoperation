@@ -1,0 +1,8 @@
+prefix=/home/rmilnuc1/catkin_ws/devel
+
+Name: franka_teleop_lmt
+Description: Description of franka_teleop_lmt
+Version: 0.8.2
+Cflags: -I/home/rmilnuc1/catkin_ws/devel/include -I/home/rmilnuc1/catkin_ws/src/franka_ros/franka_teleop_lmt/include -I/home/rmilnuc1/libfranka/include
+Libs: -L${prefix}/lib -lfranka_teleop_lmt /home/rmilnuc1/libfranka/build/libfranka.so.0.13.3
+Requires: controller_interface dynamic_reconfigure eigen_conversions franka_hw franka_gripper geometry_msgs hardware_interface tf tf_conversions message_runtime pluginlib realtime_tools roscpp actionlib

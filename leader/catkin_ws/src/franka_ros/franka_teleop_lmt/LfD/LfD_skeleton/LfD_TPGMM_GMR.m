@@ -14,11 +14,13 @@ clc;
 model.nbStates = 22; % ==== To-Do: You might want to tune the nbStates
 model.nbD = 15;
 model.nbSamples = 8;
-model.dt=0.1;
+model.dt = 0.1;
 reg = 1e-5;
-% reg = 1e-4;  % ==== To-Do: You might want to tune the regularization factor
 model.reg=reg;
 dataset_path = '/home/student1/catkin_ws/src/franka_ros/franka_teleop_lmt/TeleopData/';
+
+% model.nbD = 100;
+% reg = 1e-4;  % ==== To-Do: You might want to tune the regularization factor
 
 %% Load Demonstrations
 for n = 1:model.nbSamples

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Demo selection argument -->
+  <arg name="demo_num_arg" default="1" />
+  <param name="demo_num" value="$(arg demo_num_arg)" />
+
+  <!-- Launch the leader node -->
+  <node name="leader_node"
+        pkg="franka_teleop_lmt"
+        type="leader_node"
+        output="screen"
+        args="$(arg demo_num_arg)" />
+
+  <!-- Launch the LfD node -->
+  <!-- <node name="LfD_node"
+        pkg="franka_teleop_lmt"
+        type="LfD_node"
+        output="screen"
+        args="$(arg demo_num_arg)" /> -->
+
+</launch>

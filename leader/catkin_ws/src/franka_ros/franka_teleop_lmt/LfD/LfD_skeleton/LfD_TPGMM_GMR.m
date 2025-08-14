@@ -17,7 +17,7 @@ model.nbSamples = 8;
 model.dt = 0.1;
 reg = 1e-5;
 model.reg=reg;
-dataset_path = 'D:/TUM/4_Semester/RMIL/teleoperation/leader/catkin_ws/src/franka_ros/franka_teleop_lmt/TeleopData/';
+dataset_path = '/Users/yisheng/TUM/4_Semester/RMIL/teleoperation/leader/catkin_ws/src/franka_ros/franka_teleop_lmt/TeleopData/';
 
 % model.nbD = 100;
 % reg = 1e-4;  % ==== To-Do: You might want to tune the regularization factor
